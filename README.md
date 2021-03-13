@@ -11,9 +11,28 @@ The repository for HackBash
 > - submit primary application to the organization to participate in the trial without submitting the name, email, any social profile or address.
 > - Accept or reject the invitation of an organization after primary screenign
 
+## Features:
+- Asks user at the time of sign up if they are volunteer or organization and automatically fetches it at the time of login
+> <span><img src="metadata/ss_sign_up.png" alt = "Sign Up screen" width=400px></span> <span><img src="metadata/ss_log_in.png" alt = "Log in screen" width=400px></span>
+
+- Based on a query, user can get a list of trials going on in a particular field .
+> <span><img src="metadata/ss_trials.png" alt = "Trial Homepage" width=800px>
+
+- Organizations get the list of their trials right at their dashboard, where they can add, edit or delete this trial, and select applicants first or second rounf of shortlisting
+> <span><img src="metadata/ss_org_trials.png" alt = "Organization Trials screen" width=800px>
 
 
-### Contributions:
+## Starting the Application:
+- Open the terminal(for linux) or command prompt(for Windows NT) and slide doen to the repo.
+- open a new terminal and then, in first terminal, start the backend server using 
+- `cd backend && npm install && start`
+- The server will start at the port 8000
+- Now, from the other terminal, start the web server by running command
+- `cd frontend && npm install && npm start`
+- The website will be opened on your local machine, but the database is synced with cloud clusters, hence any changes made locally will be applicable to  the production code too
+
+
+> ### Contributions:
 - [<b>Aditya Paul</b>](https://www.github.com/adityapaul18)        -> Front end major
 - [<b>Avanish Gupta</b>](https://www.github.com/AvanishCodes)      -> Ideation
 - [<b>Heli Vakharia</b>](https://www.github.com/heli576)      -> Back end major

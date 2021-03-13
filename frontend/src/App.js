@@ -1,7 +1,7 @@
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+    BrowserRouter as Router,
+    Switch,
+    Route
 } from "react-router-dom";
 import './App.css';
 import CheckApp from "./pages/CheckApp/CheckApp";
@@ -23,17 +23,17 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/login" component={Login}/>
-                <Route exact path="/signup" component={Signup}/>
-                <UserRoute exact path="/userdetails" component={Userdetails}/>
-                <OrgRoute exact path="/orgacc" component={OrgAcc}/>
-                <UserRoute exact path="/useracc" component={UserAcc}/>
-                <OrgRoute exact path="/org" component={Org}/>
-                <OrgRoute exact path="/org/trialedit" component={Trialedit}/>
-                <UserRoute exact path="/user" component={User}/>
-                <UserRoute exact path="/user/checkapp" component={CheckApp}/>
-                <OrgRoute exact path="/org/checkapp/:trialId" component={OrgCheckApp}/>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={Signup} />
+                <UserRoute exact path="/userdetails" component={Userdetails} />
+                <OrgRoute exact path="/orgacc" component={OrgAcc} />
+                <UserRoute exact path="/useracc" component={UserAcc} />
+                <OrgRoute exact path="/org" component={Org} />
+                <OrgRoute exact path="/org/trialedit" component={Trialedit} />
+                <UserRoute exact path="/user" component={User} />
+                <UserRoute exact path="/user/checkapp" component={CheckApp} />
+                <OrgRoute exact path="/org/checkapp/:trialId" component={OrgCheckApp} />
             </Switch>
         </Router>
     );
