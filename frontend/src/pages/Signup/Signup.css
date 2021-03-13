@@ -4,7 +4,9 @@
 }
 
 .signup_right{
-    background-color: gray;
+    background-image: url("../../images/log.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     flex :0.8;
 }
 
