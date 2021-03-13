@@ -33,10 +33,11 @@ function Home() {
           <div><PolymerIcon /></div>
           <div>
             <Button onClick={() => (history.push('./login'))} variant="contained" >Login</Button>
-            <span>need any help ?</span>
+            <span>Need any help ?</span>
           </div>
         </div>
         <div><span className="ctrials" >Clinical Trials</span></div>
+        {/* Have to implement a horizontal divider */}
         <div>
           <form className="filterform" >
             <span>Find Clinical Trials</span>
@@ -48,6 +49,7 @@ function Home() {
             </div>
           </form>
         </div>
+        {/* Have to implement a horizontal divider */}
       </div>
       {/* <div className="filer_res" >3 results found : Pune, India</div> */}
       <div className="lower_home">
