@@ -2,8 +2,8 @@ import Footer from '../../components/Footer/Footer';
 import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import './OrgAcc.css'
+// import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import './Orgacc.css'
 
 function OrgAcc(org) {
     const [keyword, setKeyword] = useState("")
@@ -18,49 +18,37 @@ function OrgAcc(org) {
             <div >
                 <span>Name of Organization: </span>
             </div>
-            <div className="field" >
-                <span>Address Line 1: </span>
-                <span>
-                    {/* <input placeholder="Address Line 1" type="text" onChange={(e) => setKeyword(e.target.value)} /> */}
-                </span>
-            </div>
-            <div className="field" >
-                <span>City: </span>
-                <span>
-                    <input placeholder="City" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
-            </div>
-            <div className="field" >
-                <span>State: </span>
-                <span>
-                    <input placeholder="State" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
-            </div>
-            <div className="field" >
-                <span>Country: </span>
-                <span>
-                    <input placeholder="Country" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
-            </div>
-            <div className="field" >
-                <span>Pin Code: </span>
-                <span>
-                    <input placeholder="Pin Code" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
-            </div>
-            <div className="field" >
-                <span>Website: </span>
-                <span>
-                    <input placeholder="website URL" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
-            </div>
-            <div className="field" >
-                <span>Help-line Number: </span>
-                <span>
-                    <input placeholder="help line number" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
-            </div>
-            <div className="lower_home">
+            <div className="field">
+                <table>
+                    <tr>
+                        <td>Address Line 1:</td>
+                        <td><input placeholder="Address Line 1" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input placeholder="City" type="text" onChange={(e) => setKeyword(e.target.value)} /> </td>
+                    </tr>
+                    <tr>
+                        <td>State:</td>
+                        <td><input placeholder="State" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td><input placeholder="Country" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                    </tr>
+                    <tr>
+                        <td>Pin Code:</td>
+                        <td><input placeholder="Pin Code" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                    </tr>
+                    <tr>
+                        <td>Website:</td>
+                        <td><input placeholder="website URL" type="text" onChange={(e) => setKeyword(e.target.value)} />  </td>
+                    </tr>
+                    <tr>
+                        <td>Help-line Number: </td>
+                        <td><input placeholder="help line number" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                    </tr>
+                </table>
             </div>
             <Button className="savebutton" variant="contained" >save changes</Button>
             {/* <div className="footer"><Footer /></div> */}
