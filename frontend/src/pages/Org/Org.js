@@ -1,10 +1,10 @@
+import React, { useState, useEffect } from 'react'
+import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 // <div className="footer"><Footer /></div>
-import React, { useState, useEffect } from 'react'
 import { Avatar } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Trial from '../../components/Trial/Trial';
-import Navbar from '../../components/Navbar/Navbar';
 import './Org.css';
 import { isOrg } from "../../util/auth";
 import { getOrgTrials } from "../../util/trial";
