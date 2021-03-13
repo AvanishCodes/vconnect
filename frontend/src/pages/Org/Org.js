@@ -42,6 +42,7 @@ function Org() {
         ))}
       </div>
       {/* <div className="footer"><Footer /></div> */}
+      <Footer />
     </div>
   )
 }

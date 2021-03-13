@@ -8,19 +8,20 @@ import './UserAcc.css'
 function UserAcc() {
     return (
         <div>
-            <Navbar/>
+            <Navbar />
             <div className="org_header">
-                    <Avatar className="orgavatar" src="https://cdn.corporatefinanceinstitute.com/assets/types-of-organizations1.jpeg" alt="org" />
-                    <h1>User Name</h1>
-                    <span>Clinical trials</span>
-                </div>
-                <div className="track" >
-                    User <ArrowForwardIosIcon /> <span>Account</span>
-                </div>
-                <div className="lower_home">
-                </div>
-                <Button className="savebutton" variant="contained" >save changes</Button>
-            <div className="footer"><Footer /></div>
+                <Avatar className="orgavatar" src="https://cdn.corporatefinanceinstitute.com/assets/types-of-organizations1.jpeg" alt="org" />
+                <h1>User Name</h1>
+                <span>Clinical trials</span>
+            </div>
+            <div className="track" >
+                User <ArrowForwardIosIcon /> <span>Account</span>
+            </div>
+            <div className="lower_home">
+            </div>
+            <Button className="savebutton" variant="contained" >save changes</Button>
+            {/* <div className="footer"><Footer /></div> */}
+            <Footer />
         </div>
     )
 }

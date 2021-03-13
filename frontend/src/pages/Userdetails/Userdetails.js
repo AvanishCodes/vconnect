@@ -18,7 +18,8 @@ function Userdetails() {
             <div className="lower_home">
             </div>
             <Button className="savebutton" variant="contained" >save changes</Button>
-            <div className="footer"><Footer /></div>
+            {/* <div className="footer"><Footer /></div> */}
+            <Footer />
         </div>
     )
 }

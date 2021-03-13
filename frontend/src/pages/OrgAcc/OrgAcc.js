@@ -55,6 +55,7 @@ function OrgAcc() {
             <Button  variant="contained" >save changes</Button>
             </div>
             {/* <div className="footer"><Footer /></div> */}
+            <Footer/>
         </div>
     )
 }

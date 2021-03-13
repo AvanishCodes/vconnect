@@ -19,6 +19,7 @@ function CheckApp() {
             <div className="lower_home">
             </div>
             {/* <div className="footer"><Footer /></div> */}
+            <Footer />
         </div>
     )
 }
