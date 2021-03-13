@@ -1,0 +1,67 @@
+.trial_container{
+    display: flex;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(252, 252, 252, 0.986);
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.trial_container:hover{
+    box-shadow: 1px 1px 5px rgb(116, 116, 116);
+}
+
+.trialimg{
+    padding: 20px;
+}
+
+.trialimg > img {
+    width: 250px;
+}
+
+.trail_description{
+    padding:20px 0;
+    margin-left: 0px;
+}
+
+.trail_description > div {
+    margin: 10px;
+    width: 70%;
+}
+.description_id{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16.5px;
+}
+
+.description_header {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23.5px;
+}
+
+.description_detail{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.trail_description > div > span {
+    font-weight: 500;
+}
+
+@media (max-width:1450px){
+    .trialimg > img {
+        width: 150px;
+        height: 150px; 
+    }
+}
+@media (max-width:1150px){
+    .trialimg > img {
+        width: 100px;
+        height: 100px; 
+    }
+    .trialimg{
+        width:fit-content;
+        padding: 20px;
+    }
+}
