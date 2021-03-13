@@ -6,6 +6,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import {useHistory} from "react-router-dom";
 import {getTrials} from "../../util/filter";
 import './Home.css'
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
     const history = useHistory();
@@ -57,6 +58,7 @@ function Home() {
   </div>
 ))}
           </div>
+          <div className="footer"><Footer/></div>
         </div>
     )
 }

@@ -2,13 +2,8 @@ import React from 'react'
 import "./Trial.css"
 import { Button } from '@material-ui/core';
 
-<<<<<<< HEAD
 function Trial({trial}) {
-=======
-function Trial() {
-    // yaha se user check akr lena 
     const user = null;
->>>>>>> 3aacc32131a8eecb8fa4825258358d043350d62b
     return (
         <>
         <div className="trial_container" >
