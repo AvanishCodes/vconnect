@@ -5,6 +5,7 @@
     background-color: rgba(252, 252, 252, 0.986);
     border-radius: 15px;
     border: 1px solid black;
+    justify-content: space-around;
 }
 .trial_container:hover{
     box-shadow: 1px 1px 5px rgb(116, 116, 116);
@@ -25,7 +26,6 @@
 
 .trail_description > div {
     margin: 10px;
-    width: 70%;
 }
 .description_id{
     font-weight: 700;
@@ -49,13 +49,27 @@
     font-weight: 500;
 }
 
-@media (max-width:1450px){
+.trial_btns{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trial_btns > .MuiButton-root {
+    font-size: 10px;
+    width: 150px !important;
+    margin: 10px;
+    font-weight: 700;
+}
+    @media (max-width:1450px){
     .trialimg > img {
         width: 150px;
         height: 150px; 
     }
+
+
 }
-@media (max-width:1150px){
+@media (max-width:1250px){
     .trialimg > img {
         width: 100px;
         height: 100px; 
@@ -63,5 +77,78 @@
     .trialimg{
         width:fit-content;
         padding: 20px;
+    }
+    .description_id{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16.5px;
+    }
+    
+    .description_header {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 23.5px;
+    }
+    
+    .description_detail{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .description_treatment{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .trial_btns > .MuiButton-root {
+        font-size: 7px;
+        width: 120px !important;
+        margin: 10px 0px;
+        font-weight: 700;
+    }
+    
+}
+
+@media (max-width:550px){
+    .trialimg > img {
+        width: 50px;
+        height: 50px; 
+    }
+    .trialimg{
+        width:fit-content;
+        padding: 20px 10px;
+    }
+    .description_id{
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 16.5px;
+    }
+    
+    .description_header {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 23.5px;
+    }
+    
+    .description_detail{
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 19px;
+    }
+    .description_treatment{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .trial_btns > .MuiButton-root {
+        font-size: 6px;
+        width: 100px !important;
+        margin: 10px 0px;
+        font-weight: 700;
+    }
+    .trial_btns{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
     }
 }
