@@ -1,4 +1,4 @@
-.trial_container{
+.trial_container {
     display: flex;
     margin: 0 2rem;
     margin-bottom: 2rem;
@@ -7,27 +7,29 @@
     border: 1px solid black;
     justify-content: space-around;
 }
-.trial_container:hover{
+
+.trial_container:hover {
     box-shadow: 1px 1px 5px rgb(116, 116, 116);
 }
 
-.trialimg{
+.trialimg {
     padding: 20px;
 }
 
-.trialimg > img {
+.trialimg>img {
     width: 250px;
 }
 
-.trail_description{
-    padding:20px 0;
+.trail_description {
+    padding: 20px 0;
     margin-left: 0px;
 }
 
-.trail_description > div {
+.trail_description>div {
     margin: 10px;
 }
-.description_id{
+
+.description_id {
     font-weight: 700;
     font-size: 15px;
     line-height: 16.5px;
@@ -39,114 +41,109 @@
     line-height: 23.5px;
 }
 
-.description_detail{
+.description_detail {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 }
 
-.trail_description > div > span {
+.trail_description>div>span {
     font-weight: 500;
 }
 
-.trial_btns{
+.trial_btns {
     margin: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.trial_btns > .MuiButton-root {
+.trial_btns>.MuiButton-root {
     font-size: 10px;
     width: 150px !important;
     margin: 10px;
     font-weight: 700;
 }
-    @media (max-width:1450px){
-    .trialimg > img {
+
+@media (max-width:1450px) {
+    .trialimg>img {
         width: 150px;
-        height: 150px; 
+        height: 150px;
     }
-
-
 }
-@media (max-width:1250px){
-    .trialimg > img {
+
+@media (max-width:1250px) {
+    .trialimg>img {
         width: 100px;
-        height: 100px; 
+        height: 100px;
     }
-    .trialimg{
-        width:fit-content;
+    .trialimg {
+        width: fit-content;
         padding: 20px;
     }
-    .description_id{
+    .description_id {
         font-weight: 700;
         font-size: 12px;
         line-height: 16.5px;
     }
-    
     .description_header {
         font-weight: 600;
         font-size: 15px;
         line-height: 23.5px;
     }
-    
-    .description_detail{
+    .description_detail {
         font-weight: 500;
         font-size: 12px;
         line-height: 19px;
     }
-    .description_treatment{
+    .description_treatment {
         font-weight: 500;
         font-size: 12px;
         line-height: 19px;
     }
-    .trial_btns > .MuiButton-root {
+    .trial_btns>.MuiButton-root {
         font-size: 7px;
         width: 120px !important;
         margin: 10px 0px;
         font-weight: 700;
     }
-    
 }
 
-@media (max-width:550px){
-    .trialimg > img {
+@media (max-width:550px) {
+    .trialimg>img {
         width: 50px;
-        height: 50px; 
+        height: 50px;
     }
-    .trialimg{
-        width:fit-content;
+    .trialimg {
+        width: fit-content;
         padding: 20px 10px;
     }
-    .description_id{
+    .description_id {
         font-weight: 700;
         font-size: 10px;
         line-height: 16.5px;
     }
-    
     .description_header {
         font-weight: 600;
         font-size: 13px;
         line-height: 23.5px;
     }
-    
-    .description_detail{
+    .description_detail {
         font-weight: 500;
         font-size: 10px;
         line-height: 19px;
     }
-    .description_treatment{
+    .description_treatment {
         font-weight: 500;
         font-size: 12px;
         line-height: 19px;
     }
-    .trial_btns > .MuiButton-root {
+    .trial_btns>.MuiButton-root {
         font-size: 6px;
         width: 100px !important;
         margin: 10px 0px;
         font-weight: 700;
     }
-    .trial_btns{
+    .trial_btns {
         margin: 10px;
         display: flex;
         flex-direction: column;
