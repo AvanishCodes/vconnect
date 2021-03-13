@@ -15,42 +15,45 @@ function OrgAcc() {
                 <h1>ABC Organization</h1>
                 <span>Clinical trials</span>
             </div>
-            <div >
-                <span>Name of Organization: </span>
-            </div>
             <div className="field">
-                <table>
-                    <tr>
+                <table className="orgtable">
+                    <tr className="rowt" >
+                        <td>Name of Organization :</td>
+                        <td className="field" ><input placeholder="orgname" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                    </tr>
+                    <tr className="rowt" >
                         <td>Address Line 1:</td>
-                        <td><input placeholder="Address Line 1" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                        <td className="field" ><input placeholder="Address Line 1" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
                     </tr>
-                    <tr>
+                    <tr className="rowt" >
                         <td>City:</td>
-                        <td><input placeholder="City" type="text" onChange={(e) => setKeyword(e.target.value)} /> </td>
+                        <td className="field" ><input placeholder="City" type="text" onChange={(e) => setKeyword(e.target.value)} /> </td>
                     </tr>
-                    <tr>
+                    <tr className="rowt" >
                         <td>State:</td>
-                        <td><input placeholder="State" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                        <td className="field" ><input placeholder="State" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
                     </tr>
-                    <tr>
+                    <tr className="rowt" >
                         <td>Country:</td>
-                        <td><input placeholder="Country" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                        <td className="field" ><input placeholder="Country" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
                     </tr>
-                    <tr>
+                    <tr className="rowt" >
                         <td>Pin Code:</td>
-                        <td><input placeholder="Pin Code" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                        <td className="field" ><input placeholder="Pin Code" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
                     </tr>
-                    <tr>
+                    <tr className="rowt" >
                         <td>Website:</td>
-                        <td><input placeholder="website URL" type="text" onChange={(e) => setKeyword(e.target.value)} />  </td>
+                        <td className="field" ><input placeholder="website URL" type="text" onChange={(e) => setKeyword(e.target.value)} />  </td>
                     </tr>
-                    <tr>
+                    <tr className="rowt" >
                         <td>Help-line Number: </td>
-                        <td><input placeholder="help line number" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                        <td className="field" ><input placeholder="help line number" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
                     </tr>
                 </table>
             </div>
-            <Button className="savebutton" variant="contained" >save changes</Button>
+            <div className="savebuton">
+            <Button  variant="contained" >save changes</Button>
+            </div>
             {/* <div className="footer"><Footer /></div> */}
         </div>
     )
