@@ -16,6 +16,8 @@ const applicationSchema = new mongoose.Schema({
     required: true
   },
   // Result of Application
+  // result: {
+  // Shortlisting results
 
     // Shortlisting results
     primaryFilterOrg: {

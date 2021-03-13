@@ -59,7 +59,7 @@ const trialSchema = new mongoose.Schema({
     maxlength: 60
   },
   // State
-  State: {
+  state: {
     type: String,
     required: true,
     maxlength: 60
@@ -70,14 +70,17 @@ const trialSchema = new mongoose.Schema({
     required: true,
     maxlength: 60
   },
-
+  zipCode: {
+    type: String,
+    required: false,
+    maxlength: 32
+  },
   // Keywords for users' help
-  keyword:{
-      type: String,
-      required: true,
-      maxlength: 50
-    }
-
+  keyword: {
+    type: String,
+    required: true,
+    maxlength: 50
+  }
 },
   {
     timestamps: true
