@@ -79,6 +79,7 @@
     background-color: rgba(255, 255, 255, 0.800);
     display: inline-grid;
     grid-template-columns: auto auto ;
+    height:67vh
 }
 .filer_res {
     background-color: rgb(255, 255, 255);
@@ -145,4 +146,3 @@
         font-size: 14px;
     }
 }
-

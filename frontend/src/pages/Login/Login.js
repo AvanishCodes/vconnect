@@ -22,9 +22,9 @@ function Login() {
                 } else {
                     authenticate(data, () => {
                         if (data.org)
-                            history.push("/orgacc")
+                            history.push("/org")
                         else {
-                            history.push("/useracc")
+                            history.push("/user")
                         }
                     });
                 }

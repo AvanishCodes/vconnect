@@ -2,18 +2,22 @@ import React from 'react'
 import "./Trial.css"
 import { Button } from '@material-ui/core';
 
+<<<<<<< HEAD
+function Trial({trial}) {
+=======
 function Trial() {
     // yaha se user check akr lena 
     const user = null;
+>>>>>>> 3aacc32131a8eecb8fa4825258358d043350d62b
     return (
         <>
         <div className="trial_container" >
             <div className="trialimg" ><img src="https://dev.rodpub.com/images/157/626_main.jpg" alt="dream"/></div>
             <div className="trail_description">
-                <div className="description_id" > trial ID : <span>1e344vd</span></div>
-                <div className="description_header" >Brief title </div>
-                <div className="description_detail" >Format </div>
-                <div className="description_treatment" > treatment : <span>xyz, ysdfk, xyz, ysdfk, xyz, ysdfk, xyz, ysdfk</span></div>
+                <div className="description_id" > trial ID : <span>{trial._id}</span></div>
+                <div className="description_header" >{trial.studyBriefTitle}</div>
+                <div className="description_detail" >{trial.studyFormalTitle}</div>
+                <div className="description_treatment" > City : <span>{trial.city}</span></div>
             </div>
             <div className="trial_btns">
                 {user ?  (
