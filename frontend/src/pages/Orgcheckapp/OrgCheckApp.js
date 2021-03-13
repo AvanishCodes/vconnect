@@ -12,6 +12,18 @@ function OrgCheckApp() {
                 <h1>ABC Organization</h1>
                 <span>Clinical trials</span>
             </div>
+
+            <div>
+                <span>$SrNO</span>
+                <span>$ApplicationId.healthCondition</span>
+                <span>$ApplicationId.gender</span>
+                <span>$ApplicationId.age</span>
+                <span>$ApplicationId.AcceptPrimary</span>
+                <span>$ApplicationId.RejectPrimary</span>
+                <span>$ApplicationId.AccepSecondary</span>
+                <span>$ApplicationId.RejectSecondary</span>
+                <span>Check User profile</span>
+            </div>
             <div className="track" >
                 User <ArrowForwardIosIcon /> <span>Your Trials</span> <ArrowForwardIosIcon /> <span>Check Application</span>
             </div>
