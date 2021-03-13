@@ -34,7 +34,7 @@ const userProfile = new mongoose.Schema({
     max: 9999999999
   },
   // Address
-  address: {
+
     // building
     building: {
       type: String,
@@ -77,7 +77,7 @@ const userProfile = new mongoose.Schema({
       required: true,
       maxlength: 32,
     }
-  },
+
 })
 
 module.exports = mongoose.model("UserProfile", userProfile);
