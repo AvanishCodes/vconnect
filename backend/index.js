@@ -12,6 +12,8 @@ const cors = require("cors");
 const authRoutes=require("./routes/auth");
 const userProfileRoutes=require("./routes/userProfile");
 const orgProfileRoutes=require("./routes/orgProfile");
+const trialRoutes=require("./routes/trial");
+
 
 //app
 const app = express();
@@ -40,6 +42,8 @@ app.use(cors());
 app.use("/api",authRoutes);
 app.use("/api",userProfileRoutes);
 app.use("/api",orgProfileRoutes);
+app.use("/api",trialRoutes);
+
 
 const port = process.env.PORT || 8000;
 
