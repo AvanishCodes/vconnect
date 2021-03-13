@@ -1,0 +1,24 @@
+@media (max-width:750px){
+    .orgavatar {
+        width: 175px !important;
+        height: 175px !important;
+    }
+    .org_header > h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .org_header > span {
+        font-size: 15px;
+        font-weight: 600;    
+        margin: 20px;
+    }
+    .track{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .track > .MuiSvgIcon-root {
+        height:10px !important;
+        width: 10px !important;
+        margin: 0 10px;
+    }
+}

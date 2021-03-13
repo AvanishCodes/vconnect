@@ -1,0 +1,44 @@
+.org_header{
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background-image: url("../../images/homebg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.orgavatar {
+    width: 275px !important;
+    height: 275px !important;
+}
+.org_header > h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.org_header > span {
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 600;    
+    margin: 20px;
+}
+
+.track{
+    margin: 10px 35px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.track > .MuiSvgIcon-root {
+    height:15px !important;
+    width: 15px !important;
+    margin: 0 10px;
+}
+.track > span {
+    font-weight: 500;
+}
