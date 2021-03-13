@@ -1,14 +1,12 @@
 import React from 'react'
 import "./Trial.css"
 import { Button } from '@material-ui/core';
+import {isOrg,isUser} from "../../util/auth";
 
-<<<<<<< HEAD
 function Trial({trial}) {
-=======
-function Trial() {
-    // yaha se user check akr lena 
-    const user = null;
->>>>>>> 3aacc32131a8eecb8fa4825258358d043350d62b
+
+
+
     return (
         <>
         <div className="trial_container" >
@@ -19,20 +17,22 @@ function Trial() {
                 <div className="description_detail" >{trial.studyFormalTitle}</div>
                 <div className="description_treatment" > City : <span>{trial.city}</span></div>
             </div>
-            <div className="trial_btns">
-                {user ?  (
-                    <>
+
+                {isUser()&&(
+                    <div className="trial_btns">
                      <Button variant="contained">Check Status</Button>
                      <Button variant="contained">Apply for Volunteer</Button>
-                    </>
-                ) : (
-                    <>
+                    </div>
+                ) }
+                {isOrg()&&(
+                   <div className="trial_btns">
                     <Button variant="contained">Edit trial</Button>
                     <Button variant="contained">Check application</Button>
-                    </>
+                    </div>
+
                 )}
-                
-            </div>
+
+
         </div>
         </>
     )

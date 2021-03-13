@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import './OrgcheckApp.css'
+//import './OrgcheckApp.css'
 function OrgCheckApp() {
     return (
         <div>
@@ -13,11 +13,11 @@ function OrgCheckApp() {
                     <span>Clinical trials</span>
                 </div>
                 <div className="track" >
-                    User <ArrowForwardIosIcon /> <span>Your Trials</span> <ArrowForwardIosIcon /> <span>Check Application</span> 
+                    User <ArrowForwardIosIcon /> <span>Your Trials</span> <ArrowForwardIosIcon /> <span>Check Application</span>
                 </div>
                 <div className="lower_home">
                 </div>
-                
+
         </div>
     )
 }
