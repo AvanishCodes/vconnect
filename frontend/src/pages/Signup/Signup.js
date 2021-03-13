@@ -1,16 +1,11 @@
-<<<<<<< HEAD
 import React, { useState } from 'react'
-import { Button } from '@material-ui/core';
-=======
-import React , { useState } from 'react'
-import { Button,Typography} from '@material-ui/core';
->>>>>>> 0f29fd5fdbc9eb6affccef0161766b1f168dc8f5
+import { Button, Typography } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { useHistory } from "react-router-dom";
 import './Signup.css';
 import image from "../../images/log.jpeg";
 
-import {signup,authenticate} from "../../util/auth";
+import { signup, authenticate } from "../../util/auth";
 function Signup() {
 
     const [email, setEmail] = useState("")
@@ -18,26 +13,36 @@ function Signup() {
     const [password, setpassword] = useState("")
     const [isOrg, setisOrg] = useState("")
     const [carddetail, setcarddetail] = useState("")
-    const [error,setError]=useState("")
+    const [error, setError] = useState("")
     const history = useHistory();
 
     const handlesignup = (e) => {
         e.preventDefault();
-<<<<<<< HEAD
-        console.log(mail, password, name, status, carddetail);
-        setcarddetail("")
-        setname("")
-        setmail("")
-        setpassword("")
+        signup({ email, password, name, isOrg })
+            .then(data => {
+                if (data.error) {
+                    //console.log(data.error)
+                    setError(data.error)
+                } else {
+                    authenticate(data, () => {
+                        if (data.org)
+                            history.push("/orgacc")
+                        else {
+                            history.push("/useracc")
+                        }
+                    });
+                }
+            });
+
     }
     return (
         <div className="signup_container">
             <div className="signup_left">
                 <div className="signup_header"><h1>Sign <span>Up</span></h1></div>
                 <div className="signup_upper" >
-                    <input className="checker" type="radio" onChange={(e) => setstatus(e.target.value)} id="av" name="status" value="I want to volunteer" />
+                    <input className="checker" type="radio" onChange={(e) => setisOrg(e.target.value)} id="av" name="isOrg" value="false" />
                     <label for="male">I want to volunteer</label> <br />
-                    <input className="checker" type="radio" onChange={(e) => setstatus(e.target.value)} id="unav" name="status" value="We will run(are running) a trial" />
+                    <input className="checker" type="radio" onChange={(e) => setisOrg(e.target.value)} id="unav" name="isOrg" value="true" />
                     <label for="female">We will run(are running) a trial</label><br />
                 </div>
                 <div className="upper_container">
@@ -45,51 +50,12 @@ function Signup() {
                         <div className="mid_signup">
                             <div className="inmid_signup" >
                                 Name
-                            <input className="signup_input" value={name} placeholder="Your name" type="text" name="name" onChange={(e) => setname(e.target.value)} />
+                            <input className="signup_input" value={name} placeholder="Your name" type="text" name="name" onChange={(e) => setName(e.target.value)} />
                             </div>
                             <div className="inmid_signup" >
                                 email
-                            <input className="signup_input" value={mail} placeholder="Your Email" type="email" name="email" onChange={(e) => setmail(e.target.value)} />
-                            </div>
-=======
-        signup({email,password,name,isOrg})
-.then(data=>{
-  if(data.error){
-    //console.log(data.error)
-    setError(data.error)
-  }else{
-  authenticate(data,()=>{
-    if(data.org)
-    history.push("/orgacc")
-    else {
-      history.push("/useracc")
-    }
-  });
-  }
-});
-
-    }
-    return (
-        <div className="signup_container">
-            <div className="signup_left">
-            <div className="signup_header"><h1>Sign <span>Up</span></h1></div>
-            <div className="signup_upper" >
-                <input className="checker" type="radio"  onChange={(e) => setisOrg(e.target.value)} id="av" name="isOrg" value="false"/>
-                    <label for="male">I want to volunteer</label> <br/>
-                <input className="checker" type="radio"  onChange={(e) => setisOrg(e.target.value)} id="unav" name="isOrg" value="true"/>
-                    <label for="female">We will run(are running) a trial</label><br/>
-            </div>
-            <div className="upper_container">
-                <form className="signup_form">
-                    <div className="mid_signup">
-                        <div className="inmid_signup" >
-                            Name
-                            <input className="signup_input" value={name} placeholder="Your name" type="text" name="name" onChange={(e) => setName(e.target.value)} />
-                        </div>
-                        <div className="inmid_signup" >
-                            email
                             <input className="signup_input" value={email} placeholder="Your Email" type="email" name="email" onChange={(e) => setEmail(e.target.value)} />
->>>>>>> 0f29fd5fdbc9eb6affccef0161766b1f168dc8f5
+                            </div>
                         </div>
                     Password
                     <input className="login_input" value={password} placeholder="Your Password" type="password" name="password" onChange={(e) => setpassword(e.target.value)} />
@@ -97,19 +63,15 @@ function Signup() {
                     <p ><input type="radio" id="pay" name="carddetail" onChange={(e) => setcarddetail(e.target.value)} value="Save credit card information for the next time" />
                         <label className="paylabel" for="pay">Save credit card information for the next time.</label>
                     </p>
-<<<<<<< HEAD
+                    {error && <Typography style={{
+                        color: "red",
+                        fontSize: "0.9rem",
+                        marginTop: 5
+                    }}>{error}</Typography>}
                     <Button className="login_button" variant="contained" onClick={handlesignup} ><ArrowForwardIcon /></Button>
                 </div>
                 <div className="login-lower" >Already have an accout ?  <span onClick={() => history.push('./login')}>Sign in</span></div>
-                <div className="login-lower" >I'm here just to roam around!<span onClick={() => history.push('./')}>Take me home</span></div>
-=======
-                    {error&&<Typography style={{color:"red",
-    fontSize:"0.9rem",
-    marginTop:5}}>{error}</Typography>}
-                    <Button className="login_button" variant="contained" onClick={handlesignup} ><ArrowForwardIcon/></Button>
-            </div>
-            <div className="login-lower" >Already have an accout ?  <span onClick={() => history.push('./login') }>Sign in</span></div>
->>>>>>> 0f29fd5fdbc9eb6affccef0161766b1f168dc8f5
+                <div className="login-lower" >I'm here just to roam around  <span onClick={() => history.push('./')} >Take me home</span></div>
             </div>
 
             <div className="signup_right">

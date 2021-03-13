@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import './OrgcheckApp.css'
+import './OrgCheckApp.css'
 function OrgCheckApp() {
     return (
         <div>

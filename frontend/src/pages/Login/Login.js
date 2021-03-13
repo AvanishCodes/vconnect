@@ -54,6 +54,8 @@ function Login() {
                     <Button className="login_button" variant="contained" onClick={handlelogin} ><ArrowForwardIcon /></Button>
                 </div>
                 <div className="login-lower" >dont have an accout ?  <span onClick={() => history.push('./signup')} >Sign up</span></div>
+                <div className="login-lower" >I'm here just to roam around  <span onClick={() => history.push('./')} >Take me home</span></div>
+
             </div>
         </div>
     )
