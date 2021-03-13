@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
 // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import './Orgacc.css'
+import './OrgAcc.css'
 
 function OrgAcc() {
     const [keyword,setKeyword] = useState("")
