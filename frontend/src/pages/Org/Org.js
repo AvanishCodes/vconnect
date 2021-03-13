@@ -18,10 +18,10 @@ function Org() {
                     ABC Organization <ArrowForwardIosIcon/> <span>Your trials</span>
                 </div>
                 <div className="lower_home">
+               {/*<div> <Trial/></div>
                <div> <Trial/></div>
                <div> <Trial/></div>
-               <div> <Trial/></div>
-               <div> <Trial/></div>
+               <div> <Trial/></div>*/}
             </div>
         </div>
     )
