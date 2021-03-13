@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 import PolymerIcon from '@material-ui/icons/Polymer';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import { useHistory } from "react-router-dom";
-import { getTrials } from "../../util/filter";
+import { getFilteredTrials } from "../../util/trial";
 import './Home.css'
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
 
   const getResults = (e) => {
     e.preventDefault();
-    getTrials(keyword)
+    getFilteredTrials(keyword)
       .then(data => {
         if (data.error) {
           console.log(data.error)
