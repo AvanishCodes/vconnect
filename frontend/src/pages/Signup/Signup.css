@@ -1,0 +1,104 @@
+.signup_container{
+    height: 100vh;
+    display: flex;
+}
+
+.signup_right{
+    background-color: gray;
+    flex :0.8;
+}
+
+.signup_left{
+    flex: 0.5;
+    display: grid;
+    margin: 4rem;
+}
+
+.signup_header{
+    color: rgba(255, 154, 131, 1);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+label{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.signup_header >h1 > span {
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgba(255, 154, 131, 1) ;
+}
+
+.upper_signup {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.upper_signup  > input {
+    border: 2px solid rgba(255, 154, 131, 1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.signup_form{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.inmid_signup{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.mid_signup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inmid_signup > input {
+    border: 2px solid rgba(255, 154, 131, 1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.signup_form > input {
+    border: 2px solid rgba(255, 154, 131, 1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1150px){
+    .signup_header{
+        color: rgba(255, 154, 131, 1);
+        font-size: 41px;
+        font-weight: 800;
+    }
+}
+@media (max-width: 680px)
+{
+    .signup_form{
+        width: 92%;
+    }
+    .signup_left{
+        margin: 35px;
+    }
+    .paylabel{
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
