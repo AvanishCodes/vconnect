@@ -10,35 +10,33 @@ import './Footer.css'
 function Footer() {
     return (
         <div className="footermain">
-            <div className="footer1" >
             <div className="footer" >
-        <div className="footer_upper">
-            <div className="footlogo">< PolymerIcon/></div>
-            <div className="footer_options" >
-                <div>Copyright</div>
-                <div>Insight</div>
-                <div>Copyright</div>
-                <div>Insight</div>
-                <div>Copyright</div>
-                <div>Insight</div>
-                <div>Copyright</div>
-                <div>Insight</div>
-            </div>
-            <div className="footbutton" >
-                <Button variant="contained">Contact</Button>
+                <div className="footer_upper">
+                    <div className="footlogo">< PolymerIcon/></div>
+                    <div className="footer_options" >
+                        <div>Copyright</div>
+                        <div>Insight</div>
+                        <div>Copyright</div>
+                        <div>Insight</div>
+                        <div>Copyright</div>
+                        <div>Insight</div>
+                        <div>Copyright</div>
+                        <div>Insight</div>
+                    </div>
+                    <div className="footbutton" >
+                        <Button variant="contained">Contact</Button>
+                    </div>
+                </div>
+            <hr/>
+            <div className="footerlinks" >
+                <div>
+                    <TwitterIcon/>
+                    <InstagramIcon/>
+                    <FacebookIcon/>
+                    <LinkedInIcon/>
+                </div>
             </div>
         </div>
-        <hr/>
-        <div className="footerlinks" >
-            <div>
-                <TwitterIcon/>
-                <InstagramIcon/>
-                <FacebookIcon/>
-                <LinkedInIcon/>
-            </div>
-        </div>
-        </div>
-            </div>
         </div>
     )
 }
