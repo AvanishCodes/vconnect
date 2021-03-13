@@ -14,7 +14,7 @@ function OrgAcc() {
                     <span>Clinical trials</span>
                 </div>
                 <div className="track" >
-                    User <ArrowForwardIosIcon /> <span>Account</span>
+                    ABC Organization <ArrowForwardIosIcon /> <span>Account</span> 
                 </div>
                 <div className="lower_home">
                 </div>
