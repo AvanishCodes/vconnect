@@ -4,7 +4,7 @@ import { Avatar, Button } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import './Orgacc.css'
 
-function OrgAcc(org) {
+function OrgAcc() {
     const [keyword,setKeyword] = useState("")
     return (
         <div>

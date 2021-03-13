@@ -33,7 +33,7 @@ function App() {
                 <OrgRoute exact path="/org/trialedit" component={Trialedit}/>
                 <UserRoute exact path="/user" component={User}/>
                 <UserRoute exact path="/user/checkapp" component={CheckApp}/>
-                <OrgRoute exact path="/org/checkapp" component={OrgCheckApp}/>
+                <OrgRoute exact path="/org/checkapp/:trialId" component={OrgCheckApp}/>
             </Switch>
         </Router>
     );
