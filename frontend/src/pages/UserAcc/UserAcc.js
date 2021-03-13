@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer/Footer';
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
@@ -19,6 +20,7 @@ function UserAcc() {
                 <div className="lower_home">
                 </div>
                 <Button className="savebutton" variant="contained" >save changes</Button>
+            <div className="footer"><Footer /></div>
         </div>
     )
 }

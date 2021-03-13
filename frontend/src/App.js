@@ -13,7 +13,7 @@ import Signup from "./pages/Signup/Signup";
 import Trialedit from "./pages/Trialedit/Trialedit";
 import User from "./pages/User/User";
 import UserAcc from "./pages/UserAcc/UserAcc";
-import OrgAcc from "./pages/Userdetails/Userdetails";
+import OrgAcc from "./pages/OrgAcc/OrgAcc";
 import Userdetails from "./pages/Userdetails/Userdetails";
 
 import OrgRoute from "./routes/OrgRoute";

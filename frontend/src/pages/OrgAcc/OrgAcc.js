@@ -1,11 +1,12 @@
+import Footer from '../../components/Footer/Footer';
 import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import './Orgacc.css'
+import './OrgAcc.css'
 
 function OrgAcc(org) {
-    const [keyword,setKeyword] = useState("")
+    const [keyword, setKeyword] = useState("")
     return (
         <div>
             <Navbar />
@@ -14,16 +15,13 @@ function OrgAcc(org) {
                 <h1>ABC Organization</h1>
                 <span>Clinical trials</span>
             </div>
-            <div className="field" >
+            <div >
                 <span>Name of Organization: </span>
-                <span>
-                    <input placeholder="Name of the Organization" type="text" onChange={(e) => setKeyword(e.target.value)} />
-                </span>
             </div>
             <div className="field" >
                 <span>Address Line 1: </span>
                 <span>
-                    <input placeholder="Address Line 1" type="text" onChange={(e) => setKeyword(e.target.value)} />
+                    {/* <input placeholder="Address Line 1" type="text" onChange={(e) => setKeyword(e.target.value)} /> */}
                 </span>
             </div>
             <div className="field" >
@@ -65,6 +63,7 @@ function OrgAcc(org) {
             <div className="lower_home">
             </div>
             <Button className="savebutton" variant="contained" >save changes</Button>
+            {/* <div className="footer"><Footer /></div> */}
         </div>
     )
 }
