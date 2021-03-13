@@ -52,6 +52,7 @@ exports.getAllTrials=(req,res)=>{
 };
 
 exports.trialSearch=(req,res)=>{
+  //console.log(req.query)
 Trial.find(req.query,(err,trial)=>{
   if(!trial)
   res.status(400).json({error:"Trial not found"})
