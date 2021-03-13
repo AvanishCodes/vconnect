@@ -9,7 +9,7 @@ const cors = require("cors");
 
 
 //import routes
-
+const authRoutes=require("./routes/auth");
 
 //app
 const app = express();
@@ -35,7 +35,7 @@ app.use(expressValidator());
 app.use(cors());
 
 //routes middleware
-
+app.use("/api",authRoutes);
 
 const port = process.env.PORT || 8000;
 
