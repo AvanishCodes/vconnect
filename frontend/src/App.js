@@ -8,6 +8,7 @@ import CheckApp from "./pages/CheckApp/CheckApp";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Org from "./pages/Org/Org";
+import OrgCheckApp from "./pages/Orgcheckapp/OrgCheckApp";
 import Signup from "./pages/Signup/Signup";
 import Trialedit from "./pages/Trialedit/Trialedit";
 import User from "./pages/User/User";
@@ -30,6 +31,7 @@ function App() {
                 <Route exact path="/org/trialedit" component={Trialedit}/>
                 <Route exact path="/user" component={User}/>
                 <Route exact path="/user/checkapp" component={CheckApp}/>
+                <Route exact path="/org/checkapp" component={OrgCheckApp}/>
             </Switch>
         </Router>
     </div>
