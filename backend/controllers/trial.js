@@ -43,7 +43,7 @@ exports.updateTrial=(req,res)=>{
 };
 
 exports.getAllTrials=(req,res)=>{
-  Trial.find().exec((err,data)=>{
+  Trial.find({org:req.params.orgId}).exec((err,data)=>{
     if(err){
       return res.status(400).json({error:err});
     }

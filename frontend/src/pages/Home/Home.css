@@ -1,4 +1,4 @@
-.homecontainer{
+.homecontainer {
     background-image: url('../../images/homebg.jpeg');
     background-color: rgba(253, 253, 253, 0.918);
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     bottom: 0px;
 }
 
-.upper_home{
+.upper_home {
     background-color: rgba(255, 255, 255, 0.800);
     padding: 35px;
     display: flex;
@@ -18,101 +18,104 @@
     justify-content: space-between;
     height: 20vh;
 }
-.navbar_upper > div > .MuiButton-root{
+
+.navbar_upper>div>.MuiButton-root {
     background-color: rgba(16, 81, 87, 1);
     color: white;
-    margin:0 25px;
+    margin: 0 25px;
 }
 
-.navbar_upper > div > .MuiSvgIcon-root{
-     width: 2em !important;
-     height: 2em !important;
+.navbar_upper>div>.MuiSvgIcon-root {
+    width: 2em !important;
+    height: 2em !important;
 }
 
-.navbar_upper{
+.navbar_upper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.ctrials{
+.ctrials {
     background-color: rgba(107, 107, 107, 0.404);
     padding: 10px;
     margin: 10px 0;
     border-radius: 15px;
 }
 
-.filterform{
+.filterform {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.filterform > span {
+.filterform>span {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
 }
 
-.filterform > input {
+.filterform>input {
     border: 2px solid rgba(255, 154, 131, 1);
     padding: 12px;
     border-radius: 8px;
-    width:25%;
-    margin: 0 20px;
-}
-.filterform > div > .MuiButton-root {
+    width: 25%;
     margin: 0 20px;
 }
 
+.filterform>div>.MuiButton-root {
+    margin: 0 20px;
+}
 
-.navbutton1{
+.navbutton1 {
     color: rgb(107, 107, 107) !important;
     border: 2px solid rgba(255, 154, 131, 1) !important;
-    background-color: white  !important;
+    background-color: white !important;
 }
 
-.navbutton2{
-    background-color:rgba(255, 154, 131, 1) !important;
+.navbutton2 {
+    background-color: rgba(255, 154, 131, 1) !important;
     color: white !important;
 }
 
-.lower_home{
+.lower_home {
     padding-top: 30px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.800);
     display: inline-grid;
-    grid-template-columns: auto auto ;
-    height:67vh
+    grid-template-columns: auto auto;
+    height: 67vh
 }
+
 .filer_res {
     background-color: rgb(255, 255, 255);
     font-weight: 500px;
-    padding:15px 35px;
+    padding: 15px 35px;
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 22px;
 }
 
-@media (max-width:1250px){
-    .filterform > input{
+@media (max-width:1250px) {
+    .filterform>input {
         width: 20%;
         margin: 0 2px;
     }
-    .filterform > div > .MuiButton-root {
+    .filterform>div>.MuiButton-root {
         margin: 0 5px;
     }
-    .filterform > span {
+    .filterform>span {
         font-weight: 600;
         font-size: 17px;
         line-height: 24px;
     }
-    .upper_home{
+    .upper_home {
         padding: 15px;
     }
 }
-@media (max-width:1000px){
-    .lower_home{
+
+@media (max-width:1000px) {
+    .lower_home {
         padding-top: 30px;
         background-color: rgba(255, 255, 255, 0.800);
         display: flex;
@@ -120,33 +123,32 @@
     }
 }
 
-
-@media (max-width:750px){
-    .filterform{
+@media (max-width:750px) {
+    .filterform {
         flex-direction: column;
         justify-content: space-between;
     }
-    .upper_home{
+    .upper_home {
         height: 35vh;
     }
-    .filterform > input{
+    .filterform>input {
         width: 85%;
         margin: 5px;
     }
-    .filterform > div > .MuiButton-root {
-        margin:9px;
+    .filterform>div>.MuiButton-root {
+        margin: 9px;
     }
-    .upper_home{
+    .upper_home {
         padding: 15px;
     }
-    .navbar_upper > div > .MuiButton-root{
+    .navbar_upper>div>.MuiButton-root {
         font-size: 10px;
-        margin:0 15px;
+        margin: 0 15px;
     }
-    .navbar_upper >div > span {
+    .navbar_upper>div>span {
         font-size: 13px;
     }
-    .ctrials{
+    .ctrials {
         font-size: 14px;
     }
 }

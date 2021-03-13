@@ -23,7 +23,7 @@ requireSignin,
 isAuth,
 getFilteredTrials
 );
-router.get("/trial",getAllTrials);
+router.get("/trial/by/org/:orgId",requireSignin,isAuth,getAllTrials);
 router.get("/search",trialSearch);
 
 router.param("trialId",trialById);
