@@ -36,7 +36,6 @@ function Home() {
             <Button onClick={() => (history.push('./login'))} variant="contained" >Login</Button>
             <span>Need any help ?</span>
           </div>
-          <div className="footer"><Footer/></div>
         </div>
         <div><span className="ctrials" >Clinical Trials</span></div>
         {/* Have to implement a horizontal divider */}
@@ -56,11 +55,12 @@ function Home() {
       {/* <div className="filer_res" >3 results found : Pune, India</div> */}
       <div className="lower_home">
         {trials.map((trial, i) => (
-          <div key={i}>
+            <div key={i}>
             <Trial trial={trial} />
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -66,7 +66,7 @@ useEffect(()=>{
   const classes = useStyles();
     return (
         <div>
-             <Navbar/>
+            <Navbar />
             <div className="org_header">
                     <Avatar className="orgavatar" src="https://cdn.corporatefinanceinstitute.com/assets/types-of-organizations1.jpeg" alt="org" />
                     <h1>{isOrg().org.name}</h1>

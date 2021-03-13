@@ -1,7 +1,7 @@
 .org_header{
     display: grid;
     place-items: center;
-    padding: 30px;
+    padding: 3px;
     background-image: url("../../images/homebg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
