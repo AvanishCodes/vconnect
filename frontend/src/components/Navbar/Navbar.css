@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 35px;
+    align-items: center;
+}
+
+.navbar > div > .MuiSvgIcon-root {
+    height: 2em !important;
+    width: 2em !important;
+}
+
+.navbar > div > .MuiButton-root {
+    margin:0 15px;
+}
+
+.logoutbtn{
+    border: 1px solid rgb(0, 0, 0) !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.accbtn{
+    background-color: rgba(255, 154, 131, 1) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 154, 131, 1)!important;
+}
+
+@media (max-width:450px){
+    .accbtn > span {
+        font-size: 0px;
+    }
+    .logoutbtn > span {
+        font-size: 0px;
+    }
+    
+}

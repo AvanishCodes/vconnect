@@ -15,6 +15,7 @@ const orgProfileRoutes=require("./routes/orgProfile");
 const trialRoutes=require("./routes/trial");
 const applicationRoutes=require("./routes/application");
 
+
 //app
 const app = express();
 
@@ -44,6 +45,7 @@ app.use("/api",userProfileRoutes);
 app.use("/api",orgProfileRoutes);
 app.use("/api",trialRoutes);
 app.use("/api",applicationRoutes);
+
 
 const port = process.env.PORT || 8000;
 

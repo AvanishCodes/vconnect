@@ -20,11 +20,11 @@ const userProfile = new mongoose.Schema({
   },
   // Keywords to be notified for in dashboard
   keyword:
-    {
-      type: String,
-      required: false,
-      maxlength: 50
-    }
+  {
+    type: String,
+    required: false,
+    maxlength: 50
+  }
   ,
   // Mobile Number
   mobileNumber: {
@@ -34,50 +34,49 @@ const userProfile = new mongoose.Schema({
     max: 9999999999
   },
   // Address
-
-    // building
-    building: {
-      type: String,
-      required: false,
-      maxlength: 50
-    },
-    // Address Line 1
-    al1: {
-      type: String,
-      required: true,
-      maxlength: 200
-    },
-    // Address Line 2
-    al2: {
-      type: String,
-      required: false,
-      maxlength: 200
-    },
-    // City or District
-    city: {
-      type: String,
-      required: true,
-      maxlength: 32
-    },
-    // State
-    state: {
-      type: String,
-      required: true,
-      maxlength: 32
-    },
-    // Country
-    country: {
-      type: String,
-      required: true,
-      maxlength: 32
-    },
-    // Postal Code: Zip/Pin
-    zipCode: {
-      type: String,
-      required: true,
-      maxlength: 32,
-    }
-
+  // address: {
+  // building
+  building: {
+    type: String,
+    required: false,
+    maxlength: 50
+  },
+  // Address Line 1
+  al1: {
+    type: String,
+    required: true,
+    maxlength: 200
+  },
+  // Address Line 2
+  al2: {
+    type: String,
+    required: false,
+    maxlength: 200
+  },
+  // City or District
+  city: {
+    type: String,
+    required: true,
+    maxlength: 32
+  },
+  // State
+  state: {
+    type: String,
+    required: true,
+    maxlength: 32
+  },
+  // Country
+  country: {
+    type: String,
+    required: true,
+    maxlength: 32
+  },
+  // Postal Code: Zip/Pin
+  zipCode: {
+    type: String,
+    required: true,
+    maxlength: 32,
+  }
 })
 
 module.exports = mongoose.model("UserProfile", userProfile);
