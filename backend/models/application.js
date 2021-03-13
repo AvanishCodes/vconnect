@@ -21,25 +21,29 @@ const applicationSchema = new mongoose.Schema({
 
     // Shortlisting results
     primaryFilterOrg: {
-      type: String,       // Accepted, Rejected or Waiting
-      required: true
+      type: Boolean,
+      default:"false",      // Accepted, Rejected or Waiting
+      required: false
     },
     // Shortlisting results
     primaryFilterUser: {
-      type: String,       // Accepted, Rejected or Waiting
-      required: true
+      type: Boolean,
+      default:"false",      // Accepted, Rejected or Waiting
+      required: false
     },
     // Final status for physical verification
     forPhysicalVerificationOrg: {
-      type: String,       // Accepted, Rejected or Waiting
-      required: true
+      type: Boolean,
+      default:"false",      // Accepted, Rejected or Waiting
+      required: false
     },
     // Final status for physical verification
     forPhysicalVerificationUser: {
-      type: String,       // Accepted, Rejected or Waiting
-      required: true
+      type: Boolean,
+      default:"false",       // Accepted, Rejected or Waiting
+      required: false
     }
-  
+
 })
 
 
