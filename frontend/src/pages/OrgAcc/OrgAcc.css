@@ -16,6 +16,26 @@
 }
 
 .field > input {
-    flex: 0.3;
-    width: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 350px;
+    margin: 10px;
+}
+
+.orgtable{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.savebuton{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px 0;
+}
+.savebuton > .MuiButton-root{
+    background-color: rgba(255, 154, 131, 1) !important;
+    color: white !important;
 }
