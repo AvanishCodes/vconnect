@@ -1,0 +1,6 @@
+.savebutton{
+    color: white !important;
+    background-color: rgba(255, 154, 131, 1) !important;
+    position: absolute;
+    left: 30px;
+}
