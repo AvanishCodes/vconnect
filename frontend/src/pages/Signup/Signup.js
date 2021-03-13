@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import {useHistory} from "react-router-dom";
 import './Signup.css';
-
+import image from "../../images/log.jpeg"
 function Signup() {
 
     const [mail, setmail] = useState("")
