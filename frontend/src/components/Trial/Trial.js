@@ -3,10 +3,7 @@ import "./Trial.css"
 import { Button } from '@material-ui/core';
 import { isOrg, isUser } from "../../util/auth";
 
-function Trial({ trial }) {
-
-
-
+function Trial({trial}) {
     return (
         <>
             <div className="trial_container" >

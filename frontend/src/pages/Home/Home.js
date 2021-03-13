@@ -6,6 +6,7 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 import { useHistory } from "react-router-dom";
 import { getFilteredTrials } from "../../util/trial";
 import './Home.css'
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
   const history = useHistory();
@@ -35,6 +36,7 @@ function Home() {
             <Button onClick={() => (history.push('./login'))} variant="contained" >Login</Button>
             <span>Need any help ?</span>
           </div>
+          <div className="footer"><Footer/></div>
         </div>
         <div><span className="ctrials" >Clinical Trials</span></div>
         {/* Have to implement a horizontal divider */}

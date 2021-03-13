@@ -5,6 +5,10 @@
     background-size: cover;
     background-attachment: fixed;
 }
+.footer{
+    position: absolute;
+    bottom: 0px;
+}
 
 .upper_home {
     background-color: rgba(255, 255, 255, 0.800);
