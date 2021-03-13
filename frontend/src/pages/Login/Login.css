@@ -1,0 +1,85 @@
+.login_container{
+    display: flex;
+    height: 100vh;
+}
+
+.login_left{
+    flex: 0.7;
+    background-color: gray;
+}
+
+.login_right{
+    display: grid;
+    margin: 4rem ;
+
+}
+
+.login_header{
+    color: rgba(255, 154, 131, 1);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.login_header >h1 > span {
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgba(255, 154, 131, 1) ;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.login_form > input {
+    border: 2px solid rgba(255, 154, 131, 1);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.upper_container > p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login_button{
+    margin: 20px;
+}
+
+.upper_container >  .MuiButton-root {
+    margin-top: 30px;
+    width: 4em;
+    height: 4em;
+    background-color:rgba(255, 154, 131, 1) ;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px rgb(255, 169, 150);
+}
+
+.upper_container >  .MuiButton-root:hover{
+    background-color:rgba(253, 142, 117, 0.87) ;
+}
+
+.login-lower{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login-lower > span {
+    color: rgba(255, 154, 131, 1) ;
+    cursor: pointer;
+}
+
+@media (max-width: 430px)
+{
+    .login_header{
+        color: rgba(255, 154, 131, 1);
+        font-size: 41px;
+        font-weight: 800;
+    }
+}
