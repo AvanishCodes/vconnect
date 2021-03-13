@@ -10,7 +10,6 @@ import './Footer.css'
 function Footer() {
     return (
         <div className="footermain">
-            <div className="footer" >
                 <div className="footer_upper">
                     <div className="footlogo">< PolymerIcon/></div>
                     <div className="footer_options" >
@@ -36,7 +35,6 @@ function Footer() {
                     <LinkedInIcon/>
                 </div>
             </div>
-        </div>
         </div>
     )
 }
