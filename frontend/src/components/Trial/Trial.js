@@ -1,8 +1,16 @@
 import React from 'react'
 import "./Trial.css"
+import { Button } from '@material-ui/core';
 
+<<<<<<< HEAD
 function Trial({trial}) {
+=======
+function Trial() {
+    // yaha se user check akr lena 
+    const user = null;
+>>>>>>> 3aacc32131a8eecb8fa4825258358d043350d62b
     return (
+        <>
         <div className="trial_container" >
             <div className="trialimg" ><img src="https://dev.rodpub.com/images/157/626_main.jpg" alt="dream"/></div>
             <div className="trail_description">
@@ -11,7 +19,22 @@ function Trial({trial}) {
                 <div className="description_detail" >{trial.studyFormalTitle}</div>
                 <div className="description_treatment" > City : <span>{trial.city}</span></div>
             </div>
+            <div className="trial_btns">
+                {user ?  (
+                    <>
+                     <Button variant="contained">Check Status</Button>
+                     <Button variant="contained">Apply for Volunteer</Button>
+                    </>
+                ) : (
+                    <>
+                    <Button variant="contained">Edit trial</Button>
+                    <Button variant="contained">Check application</Button>
+                    </>
+                )}
+                
+            </div>
         </div>
+        </>
     )
 }
 
