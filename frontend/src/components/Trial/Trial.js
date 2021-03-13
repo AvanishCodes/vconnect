@@ -4,7 +4,6 @@ import { Button } from '@material-ui/core';
 import { isOrg, isUser } from "../../util/auth";
 
 function Trial({trial}) {
-    const user = null;
     return (
         <>
             <div className="trial_container" >
