@@ -3,9 +3,13 @@ import React, { useState, useEffect } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
 // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+<<<<<<< HEAD
 import './OrgAcc.css'
 import { isOrg } from "../../util/auth";
 // import { getOrgTrials } from "../../util/trial";
+=======
+import './Orgacc.css'
+>>>>>>> 5a0277de9472625c4631a46b7dd9c80b03e41c93
 
 
 function OrgAcc(org) {
