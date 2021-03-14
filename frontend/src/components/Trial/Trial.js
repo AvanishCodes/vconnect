@@ -24,8 +24,8 @@ function Trial({ trial }) {
 
                 {isUser() && (
                     <div className="trial_btns">
-                        <Button variant="contained">Check Status</Button>
-                        <Button variant="contained" onClick={(e) => {
+                        <Button className="tbtn1" variant="contained">Check Status</Button>
+                        <Button className="tbtn2" variant="contained" onClick={(e) => {
                             postApplication(userToken, trialId, userId)
                                 .then((data, err) => {
                                     if (err)
@@ -41,8 +41,8 @@ function Trial({ trial }) {
                 )}
                 {isOrg() && (
                     <div className="trial_btns">
-                        <Button variant="contained">Edit trial</Button>
-                        <Button variant="contained" onClick={(e) => {
+                        <Button className="tbtn3" variant="contained">Edit trial</Button>
+                        <Button className="tbtn4" variant="contained" onClick={(e) => {
                             history.push(`/org/checkapp/${trial._id}`)
                         }}>Check application</Button>
                     </div>

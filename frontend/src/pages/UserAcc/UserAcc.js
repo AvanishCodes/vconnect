@@ -31,7 +31,7 @@ function UserAcc() {
     country,
     zipCode}=profile;
     const handleChange=(name)=>(event)=>{
-  setProfile({...profile,error:false,[name]:event.target.value});
+  setProfile({...profile,[name]:event.target.value});
 };
 const handleSubmit=(event)=>{
   event.preventDefault()
@@ -53,6 +53,7 @@ const handleSubmit=(event)=>{
         zipCode:""
 
       })
+      alert("Added successfully!!")
     }
 
   })
@@ -121,6 +122,7 @@ const handleSubmit=(event)=>{
             <div className="savebuton">
             <Button  variant="contained" onClick={handleSubmit}>save changes</Button>
             </div>
+            <Footer />
 
         </div>
     )
