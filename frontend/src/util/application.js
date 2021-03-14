@@ -12,9 +12,9 @@ export const postApplication = (token, trialId, userId) => {
         .catch(err => console.log(err));
 }
 
-export const getAllApplication = (token, trialId, orgId) => {
+export const getAllApplication = (token,trialId,orgId) => {
     return fetch(`/application/all/${trialId}/${orgId}`, {
-        method: "POST",
+        method: "GET",
         headers: {
             Accept: "application/json",
             Authorization: `Bearer ${token}`

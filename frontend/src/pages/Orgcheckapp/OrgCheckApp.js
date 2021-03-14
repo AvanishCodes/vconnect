@@ -62,6 +62,7 @@ function OrgCheckApp({ match }) {
     const trialId = match.params.trialId;
     getAllApplication(orgToken, trialId, orgId)
       .then((data) => {
+        //console.log(data)
         setApplication(data)
       })
   }, [])
@@ -90,6 +91,17 @@ function OrgCheckApp({ match }) {
           <th>Accept final</th>
           <th>Final setup</th>
           </tr>
+        {application.map((a)=>(<tr>
+          <td>{a._id}</td>
+          <td>{a.healthCondition?("true"):("false")}</td>
+          <td>{a.gender}</td>
+          <td>{a.age}</td>
+          <td>Accepted</td>
+          <td>Accepted</td>
+          <td>Accepted</td>
+          <td>Accepted</td>
+          <td>Accepted</td>
+        </tr>))}
         </table>
       </div>
       <Footer />

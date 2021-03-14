@@ -2,7 +2,7 @@ const User = require('../models/user');
 const Org = require('../models/org');
 const Trial = require('../models/trial');
 const Application = require('../models/application');
-
+const UserProfile = require('../models/userProfile');
 exports.applicationById = (req, res, next, id) => {
     Application.findById(id).exec((err, application) => {
         if (err || !application) {
@@ -36,18 +36,25 @@ exports.postApplication=(req,res)=>{
 };
 
 exports.getAllApplications=(req,res)=>{
-  let applications=[];
-  Application.find().exec((err,data)=>{
+  Application.find().exec((err,app)=>{
     if(err){
-      return res.status(400).json({error:err});
+      console.log(err)
     }
     else{
-      data.forEach((app)=>{
-       if(app.trial==req.params.trialId)
-          applications.push(app)
+       if(app[0].trial==req.params.trialId)
+       {
+         UserProfile.find({user:app[0].applicant}).exec((err,data)=>{
 
-      })
-      res.json(applications)
+           if(err)
+           console.log(err)
+           else{
+            res.json(data)
+           }
+         })
+       }
+
+
+
     }
   });
 };
