@@ -16,8 +16,6 @@ function Trialedit() {
             <div className="track" >
                 ABC Organization <ArrowForwardIosIcon /> <span>Your Trial</span> <ArrowForwardIosIcon /> <span>Edit Trial</span>
             </div>
-            <div className="lower_home">
-            </div>
             <Button className="savebutton" variant="contained" >save changes</Button>
             <Footer />
         </div>
