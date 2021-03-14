@@ -60,7 +60,9 @@ function Home() {
           </div>
         ))}
       </div>
+      <div className="homefoot">
       <Footer />
+      </div>
     </div>
   )
 }
