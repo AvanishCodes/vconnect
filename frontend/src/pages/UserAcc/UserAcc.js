@@ -57,11 +57,11 @@ function UserAcc() {
                         <td>Gender: </td>
                         <td className="field field2" >
                         <input type="radio" id="male" name="gender" value="male" />
-                    <label for="male">male</label>
+                    <label for="male">Male</label>
                     <input type="radio"  id="female" name="gender" value="female" />
-                    <label for="female">female</label>
+                    <label for="female">Female</label>
                     <input type="radio"  id="others" name="gender" value="others" />
-                    <label for="others">others</label>
+                    <label for="others">Both</label>
                         </td>
                     </tr>
                     <tr className="rowt" >

@@ -1,12 +1,17 @@
 import Footer from '../../components/Footer/Footer';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
 // import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import './OrgAcc.css'
+import { isOrg } from "../../util/auth";
+// import { getOrgTrials } from "../../util/trial";
 
-function OrgAcc() {
-    const [keyword,setKeyword] = useState("")
+
+function OrgAcc(org) {
+    const [keyword, setKeyword] = useState("")
+    const token = isOrg() && isOrg().token;
+    const orgId = isOrg() && isOrg().org._id;
     return (
         <div>
             <Navbar />
@@ -52,10 +57,10 @@ function OrgAcc() {
                 </table>
             </div>
             <div className="savebuton">
-            <Button  variant="contained" >save changes</Button>
+                <Button variant="contained" >save changes</Button>
             </div>
             {/* <div className="footer"><Footer /></div> */}
-            <Footer/>
+            <Footer />
         </div>
     )
 }
