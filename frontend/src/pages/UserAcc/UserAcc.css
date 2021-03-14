@@ -4,3 +4,8 @@
     position: absolute;
     left: 30px;
 }
+
+.field2{
+    display: flex;
+    width: 350px;
+}
