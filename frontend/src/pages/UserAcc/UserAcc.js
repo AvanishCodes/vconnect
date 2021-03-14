@@ -57,11 +57,11 @@ function UserAcc() {
                         <td>Gender: </td>
                         <td className="field field2" >
                         <input type="radio" id="male" name="gender" value="male" />
-                    <label for="male">Male</label>
+                    <label className="userlabel" for="male">Male</label>
                     <input type="radio"  id="female" name="gender" value="female" />
-                    <label for="female">Female</label>
+                    <label className="userlabel" for="female">Female</label>
                     <input type="radio"  id="others" name="gender" value="others" />
-                    <label for="others">Both</label>
+                    <label className="userlabel" for="others">Both</label>
                         </td>
                     </tr>
                     <tr className="rowt" >
@@ -70,7 +70,7 @@ function UserAcc() {
                     </tr>
                     <tr className="rowt" >
                         <td>Keyword: </td>
-                        <td className="field" ><input placeholder="Keywordr" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
+                        <td className="field" ><input placeholder="Keyword" type="text" onChange={(e) => setKeyword(e.target.value)} /></td>
                     </tr>
                 </table>
             </div>

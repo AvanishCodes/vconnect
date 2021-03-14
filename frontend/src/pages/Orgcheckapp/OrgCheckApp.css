@@ -2,5 +2,14 @@
     width: 1000px !important;
     overflow-x: scroll;
     max-width: 100vw;
+}
 
+@media (max-width:600px){
+    .checkapptable{
+        font-size: 10px;
+    }
+    .org_header > h1{
+        padding-top: 20px;
+        font-size: 17px !important;
+    }
 }
