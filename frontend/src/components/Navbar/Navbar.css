@@ -25,8 +25,8 @@
     border: 1px solid rgba(255, 154, 131, 1)!important;
 }
 
-.homebtn {
-    background-color: yellowgreen;
+.homebutton {
+    cursor: pointer;
 }
 
 @media (max-width:450px) {

@@ -12,15 +12,7 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar">
-        <div><PolymerIcon /></div>
-        {/* <div>Home</div> */}
-        <Button className="homebtn" variant="contained" onClick={(e) => {
-          if (isOrg()) {
-            history.push("/")
-          } else if (isUser()) {
-            history.push("/")
-          }
-        }}><PersonOutlineIcon /><span>Home</span></Button>
+        <div className="homebutton"><PolymerIcon onClick={() =>  history.push("/")}/> </div>
         <div>
           <Button className="accbtn" variant="contained" onClick={(e) => {
             if (isOrg()) {

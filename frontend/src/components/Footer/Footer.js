@@ -7,7 +7,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css'
 
-function Footer() {
+function Footer() { 
     return (
         <div className="footermain">
                 <div className="footer_upper">
