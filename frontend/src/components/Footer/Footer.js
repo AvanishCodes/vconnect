@@ -14,13 +14,13 @@ function Footer() {
                     <div className="footlogo">< PolymerIcon/></div>
                     <div className="footer_options" >
                         <div>Copyright</div>
-                        <div>Insight</div>
-                        <div>Copyright</div>
-                        <div>Insight</div>
-                        <div>Copyright</div>
-                        <div>Insight</div>
-                        <div>Copyright</div>
-                        <div>Insight</div>
+                        <div>HackBash</div>
+                        <div>Privacy Policy</div>
+                        <div>Clinical Trials India</div>
+                        <div>Terms of Use</div>
+                        <div>Careers</div>
+                        <div>Right to Information</div>
+                        <div>Insights</div>
                     </div>
                     <div className="footbutton" >
                         <Button variant="contained">Contact</Button>

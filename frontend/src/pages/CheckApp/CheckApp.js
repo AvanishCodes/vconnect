@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -19,6 +19,8 @@ function CheckApp() {
             <div className="lower_home">
             </div>
             {/* <div className="footer"><Footer /></div> */}
+            {/* { } */}
+            <Footer />
         </div>
     )
 }

@@ -55,12 +55,12 @@ function Home() {
       {/* <div className="filer_res" >3 results found : Pune, India</div> */}
       <div className="lower_home">
         {trials.map((trial, i) => (
-            <div key={i}>
+          <div key={i}>
             <Trial trial={trial} />
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
