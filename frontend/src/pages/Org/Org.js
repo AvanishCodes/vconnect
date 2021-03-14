@@ -41,8 +41,7 @@ function Org() {
           </div>
         ))}
       </div>
-      {/* <div className="footer"><Footer /></div> */}
-      {/* <Footer />   It was causing overflow */}
+      <Footer />
     </div>
   )
 }
