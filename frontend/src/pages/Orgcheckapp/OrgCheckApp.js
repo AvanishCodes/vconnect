@@ -13,6 +13,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { isOrg } from "../../util/auth";
 import { getAllApplication } from "../../util/application";
+import './OrgCheckApp.css'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -77,32 +78,19 @@ function OrgCheckApp({ match }) {
         {isOrg().org.name} <ArrowForwardIosIcon /> <span>Your Trials</span> <ArrowForwardIosIcon /> <span>Check Application</span>
       </div>
       <div className="lower_home" style={{ justifyContent: "center" }}>
-        <TableContainer component={Paper}>
-          <Table className={classes.table} aria-label="customized table">
-            <TableHead>
-              <TableRow>
-                <StyledTableCell>S. No</StyledTableCell>
-                <StyledTableCell align="right">Health Condition</StyledTableCell>
-                <StyledTableCell align="right">Gender</StyledTableCell>
-                <StyledTableCell align="right">Age</StyledTableCell>
-                <StyledTableCell align="right">City</StyledTableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map((row) => (
-                <StyledTableRow key={row.name}>
-                  <StyledTableCell component="th" scope="row">
-                    {row.name}
-                  </StyledTableCell>
-                  <StyledTableCell align="right">{row.calories}</StyledTableCell>
-                  <StyledTableCell align="right">{row.fat}</StyledTableCell>
-                  <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-                  <StyledTableCell align="right">{row.protein}</StyledTableCell>
-                </StyledTableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <table className="checkapptable">
+          <tr>
+          <th>S.No</th>
+          <th>Healthy Condition</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Reject primary</th>
+          <th>Accept primary</th>
+          <th>Final reject</th>
+          <th>Accept final</th>
+          <th>Final setup</th>
+          </tr>
+        </table>
       </div>
       <Footer />
     </div>

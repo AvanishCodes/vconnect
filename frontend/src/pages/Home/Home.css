@@ -97,6 +97,11 @@
     line-height: 22px;
 }
 
+.homefoot{
+    width: 100%;
+    position: absolute;
+    bottom:0
+}
 @media (max-width:1250px) {
     .filterform>input {
         width: 20%;

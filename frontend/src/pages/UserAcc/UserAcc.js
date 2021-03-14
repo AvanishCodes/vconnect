@@ -77,6 +77,7 @@ function UserAcc() {
             <div className="savebuton">
             <Button  variant="contained" >save changes</Button>
             </div>
+            <Footer />
                 
         </div>
     )

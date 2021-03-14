@@ -1,0 +1,6 @@
+.checkapptable{
+    width: 1000px !important;
+    overflow-x: scroll;
+    max-width: 100vw;
+
+}
