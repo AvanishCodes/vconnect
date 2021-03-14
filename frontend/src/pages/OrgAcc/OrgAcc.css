@@ -39,3 +39,19 @@
     background-color: rgba(255, 154, 131, 1) !important;
     color: white !important;
 }
+
+@media (max-width:600px)
+{
+    .field > input {
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid black;
+        width: 200px;
+        margin: 2px;
+    }
+    .orgtable{
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}

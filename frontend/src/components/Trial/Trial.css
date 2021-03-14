@@ -6,6 +6,7 @@
     border-radius: 15px;
     border: 1px solid black;
     justify-content: space-around;
+    height: 95%;
 }
 
 .trial_container:hover {
@@ -65,16 +66,21 @@
 }
 
 .tbtn1{
+    color: white !important;
+    background-color: rgba(255, 154, 131, 1) !important;
 
 }
 .tbtn2{
-    
+    color: white !important;
+    background-color: rgba(16, 81, 87, 1) !important;
 }
 .tbtn3{
-    
+    color: white !important;
+    background-color: rgba(255, 154, 131, 1) !important;
 }
 .tbtn4{
-    
+    color: white !important;
+    background-color: rgba(255, 154, 131, 1) !important;
 }
 
 @media (max-width:1450px) {
