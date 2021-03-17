@@ -14,7 +14,7 @@ function Trial({ trial }) {
     return (
         <>
             <div className="trial_container" >
-                <div className="trialimg" ><img src="https://dev.rodpub.com/images/157/626_main.jpg" alt="dream" /></div>
+                {/* <div className="trialimg" ><img src="https://dev.rodpub.com/images/157/626_main.jpg" alt="dream" /></div> */}
                 <div className="trail_description">
                     <div className="description_id" > trial ID : <span>{trial._id}</span></div>
                     <div className="description_header" >{trial.studyBriefTitle}</div>
