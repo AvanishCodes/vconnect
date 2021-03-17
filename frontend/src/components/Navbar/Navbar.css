@@ -17,6 +17,7 @@
 .logoutbtn {
     border: 1px solid rgb(0, 0, 0) !important;
     background-color: rgb(255, 255, 255) !important;
+    margin-left: 20px !important;
 }
 
 .accbtn {
