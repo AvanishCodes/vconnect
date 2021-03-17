@@ -6,10 +6,6 @@
     background-attachment: fixed;
     height: 100vh;
 }
-.footer{
-    position: absolute;
-    bottom: 0px;
-}
 
 .upper_home {
     background-color: rgba(255, 255, 255, 0.800);
@@ -85,7 +81,7 @@
     background-color: rgba(255, 255, 255, 0.800);
     display: inline-grid;
     grid-template-columns: auto auto;
-    /* height: 68vh */
+    min-height: 42.3vh;
 }
 
 .filer_res {
@@ -97,11 +93,6 @@
     line-height: 22px;
 }
 
-.homefoot{
-    width: 100%;
-    position: absolute;
-    bottom:0
-}
 @media (max-width:1250px) {
     .filterform>input {
         width: 20%;
