@@ -7,10 +7,12 @@
     border: 1px solid black;
     justify-content: space-around;
     height: 95%;
+    background-color: rgba(0, 126, 126, 0.274);
 }
 
 .trial_container:hover {
     box-shadow: 1px 1px 5px rgb(116, 116, 116);
+    background-color: rgba(0, 126, 126, 0.356);
 }
 
 .trialimg {
@@ -22,7 +24,7 @@
 }
 
 .trail_description {
-    padding: 20px 0;
+    padding: 20px;
     margin-left: 0px;
 }
 
