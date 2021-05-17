@@ -41,10 +41,13 @@ function Trial({ trial }) {
                 )}
                 {isOrg() && (
                     <div className="trial_btns">
-                        <Button className="tbtn3" variant="contained">Edit trial</Button>
+                        <Button className="tbtn3" variant="contained" onClick={(e) => {
+                            history.push(`/org/trialedit/${trial._id}`)
+                        }}>Edit trial </Button>
                         <Button className="tbtn4" variant="contained" onClick={(e) => {
                             history.push(`/org/checkapp/${trial._id}`)
-                        }}>Check application</Button>
+                        }}>Check application
+                        </Button>
                     </div>
 
                 )}
