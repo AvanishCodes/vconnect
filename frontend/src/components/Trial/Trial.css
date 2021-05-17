@@ -5,7 +5,7 @@
     background-color: rgba(252, 252, 252, 0.986);
     border-radius: 15px;
     border: 1px solid black;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     height: 95%;
     background-color: rgba(0, 126, 126, 0.274);
 }

@@ -18,6 +18,7 @@ import Userdetails from "./pages/Userdetails/Userdetails";
 
 import OrgRoute from "./routes/OrgRoute";
 import UserRoute from "./routes/UserRoute";
+import Addtrial from "./pages/Addtrial/Addtrial";
 
 function App() {
     return (
@@ -30,10 +31,11 @@ function App() {
                 <OrgRoute exact path="/orgacc" component={OrgAcc} />
                 <UserRoute exact path="/useracc" component={UserAcc} />
                 <OrgRoute exact path="/org" component={Org} />
-                <OrgRoute exact path="/org/trialedit" component={Trialedit} />
+                <OrgRoute exact path="/org/trialedit/:trialId" component={Trialedit} />
                 <UserRoute exact path="/user" component={User} />
                 <UserRoute exact path="/user/checkapp" component={CheckApp} />
                 <OrgRoute exact path="/org/checkapp/:trialId" component={OrgCheckApp} />
+                <OrgRoute exact path="/org/addtrial" component={Addtrial} />
             </Switch>
         </Router>
     );

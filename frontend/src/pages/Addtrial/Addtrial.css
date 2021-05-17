@@ -1,0 +1,10 @@
+.field > div {
+    flex: 1 1;
+}
+.buttonspace{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
