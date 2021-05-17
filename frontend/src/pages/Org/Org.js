@@ -8,8 +8,11 @@ import Trial from '../../components/Trial/Trial';
 import './Org.css';
 import { isOrg } from "../../util/auth";
 import { getOrgTrials } from "../../util/trial";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+import { useHistory } from 'react-router';
 
 function Org() {
+  const history = useHistory()
   const [trials, setTrials] = useState([]);
   const token = isOrg() && isOrg().token;
   const orgId = isOrg() && isOrg().org._id;
@@ -29,7 +32,7 @@ function Org() {
       <div className="org_header">
         <Avatar className="orgavatar" src="https://cdn.corporatefinanceinstitute.com/assets/types-of-organizations1.jpeg" alt="org" />
         <h1>{isOrg() && isOrg().org.name}</h1>
-        <span>Clinical trials</span>
+        <span>Clinical trials</span ><span className="addtrial" onClick={() => { history.push("/org/addtrial")}}><AddCircleIcon /> Add trial</span>
       </div>
       <div className="track" >
         {isOrg() && isOrg().org.name} <ArrowForwardIosIcon /> <span>Your trials</span>

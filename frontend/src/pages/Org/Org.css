@@ -14,16 +14,25 @@
     height: 275px !important;
 }
 .org_header > h1 {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
 }
 .org_header > span {
-    background-color: rgba(255, 255, 255, 0.671);
+    background-color: rgba(255, 255, 255, 0.575);
     border-radius: 15px;
     padding: 8px;
     font-size: 24px;
     font-weight: 600;    
     margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.addtrial{
+    cursor: pointer;
+}
+.addtrial:hover {
+    background-color: rgba(177, 177, 177, 0.849);
 }
 
 .track{
