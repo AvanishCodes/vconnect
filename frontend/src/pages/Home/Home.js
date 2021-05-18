@@ -25,7 +25,7 @@ function Home() {
         if (data.error) {
           console.log(data.error)
         } else {
-          console.log(data)
+          //console.log(data)
           setTrials(data)
           setKeyword("");
         }
@@ -57,7 +57,7 @@ function Home() {
                      history.push("/")
                    }
                  }}><ExitToAppIcon /><span>Logout</span></Button>
-             </div> 
+             </div>
               ):(
                 <>
                 {token1? (
@@ -79,14 +79,14 @@ function Home() {
                         history.push("/")
                       }
                     }}><ExitToAppIcon /><span>Logout</span></Button>
-                </div> 
+                </div>
                 ):(
                 <>
                   <Button onClick={() => (history.push('./login'))} variant="contained" >Login</Button>
                   <span>Need any help ?</span>
                 </>
                 )}
-                      
+
               </>
             )}
           </div>
@@ -108,7 +108,7 @@ function Home() {
       </div>
       {/* <div className="filer_res" >3 results found : Pune, India</div> */}
       <div className="lower_home">
-        {trials.map((trial, i) => (
+        {trials.length===0?(<h2 style={{textAlign:"center"}}>No trials found</h2>):trials.map((trial, i) => (
           <div key={i}>
             <Trial trial={trial} />
           </div>
