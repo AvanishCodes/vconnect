@@ -53,13 +53,14 @@ exports.getAllTrials=(req,res)=>{
 
 exports.trialSearch=(req,res)=>{
   //console.log(req.query)
-Trial.find(req.query,(err,trial)=>{
-  if(!trial)
-  res.status(400).json({error:"Trial not found"})
-  else {
-    res.json(trial)
+Trial.find({keyword:{$regex:req.query.keyword,$options:'i'}})
+.exec((err,trial)=>{
+  if(err){
+    return res.status(400).json("No trial found");
+
   }
-});
+  res.status(200).json(trial);
+})
 }
 
 exports.getFilteredTrials=(req,res)=>{
