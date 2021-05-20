@@ -15,8 +15,8 @@ function User() {
   useEffect(() => {
     getUserTrials(token, userId)
       .then((data, err) => {
-        if (err)
-          console.log(err)
+        if (data.error)
+          console.log(data)
         else {
           setTrials(data)
         }
@@ -34,7 +34,7 @@ function User() {
         {isUser() && isUser().user.name} <ArrowForwardIosIcon /> <span>Your trials</span>
       </div>
       <div className="lower_home">
-        {trials===undefined?(<h3 style={{textAlign:"center"}}>No trials found</h3>):trials.map((trial, i) => (
+        {trials.length===0?(<h3 style={{textAlign:"center"}}>No trials found</h3>):trials.map((trial, i) => (
           <div key={i}>
             <Trial trial={trial} />
           </div>

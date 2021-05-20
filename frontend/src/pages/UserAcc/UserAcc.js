@@ -1,15 +1,19 @@
 import Footer from '../../components/Footer/Footer';
-import React, { useState } from 'react'
+import React, { useState,useEffect} from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import { Avatar, Button } from '@material-ui/core';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import './UserAcc.css'
 import {isUser} from "../../util/auth";
-import {postUserProfile} from "../../util/userProfile";
+import {postUserProfile,getUserProfile,updateUserProfile} from "../../util/userProfile";
+import { useHistory } from "react-router-dom";
 
 function UserAcc() {
+  const history=useHistory();
   const token=isUser().token;
   const userId=isUser().user._id;
+  const [edit,setEdit]=useState(false);
+  const [profileId,setProfileId]=useState("");
     const [profile,setProfile]=useState({
       healthCondition:"",
       age:"",
@@ -35,29 +39,60 @@ function UserAcc() {
 };
 const handleSubmit=(event)=>{
   event.preventDefault()
-  postUserProfile(token,userId,profile)
-  .then(data=>{
-    if(data.error){
-      console.log(data.error)
-    }else{
-      setProfile({
-        ...profile,
-        healthCondition:"",
-        age:"",
-        gender:"",
-        keyword:"",
-        al1:"",
-        city:"",
-        state:"",
-        country:"",
-        zipCode:""
+
+    if(edit===false){
+      postUserProfile(token,userId,profile)
+      .then(data=>{
+        if(data.error){
+          console.log(data.error)
+        }else{
+          alert("Added successfully!!");
+          history.push("/user");
+        }
 
       })
-      alert("Added successfully!!")
+    }else{
+      updateUserProfile(token,userId,profileId,profile)
+      .then((data,err)=>{
+        if(data.error){
+          console.log(data.error)
+        }else{
+          alert("Updated successfully!!");
+          history.push("/user");
+        }
+      })
     }
 
-  })
+
 }
+
+useEffect(() => {
+  getUserProfile(token, userId)
+    .then((data, err) => {
+      if(data){
+        if (data.error){
+          console.log(err);
+        }
+        else {
+          setEdit(true);
+          setProfileId(data._id);
+          setProfile({
+            healthCondition:data.healthCondition,
+            age:data.age,
+            gender:data.gender,
+            keyword:data.keyword,
+            al1:data.al1,
+            city:data.city,
+            state:data.state,
+            country:data.country,
+            zipCode:data.zipCode
+
+          })
+        }
+      }
+
+    })
+}, [])
 
 
     return (

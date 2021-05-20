@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { userById, userProfileById, getProfile, postProfile, updateProfile, getAllProfiles } = require("../controllers/userProfile");
+const { userById, userProfileById, getProfile, postProfile, updateProfile, getAllProfiles, getUserProfile } = require("../controllers/userProfile");
 const { requireSignin, isAuth } = require("../controllers/auth");
 
 
@@ -17,6 +17,7 @@ router.put("/userprofile/:userProfileId/:userId",
     updateProfile
 );
 router.get("/userprofile", getAllProfiles);
+router.get("/userprofile/user/:userId",requireSignin,isAuth,getUserProfile);
 
 router.param("userProfileId", userProfileById);
 router.param("userId", userById);

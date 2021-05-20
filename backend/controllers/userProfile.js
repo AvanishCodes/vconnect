@@ -25,6 +25,16 @@ exports.getProfile=(req,res)=>{
   return res.json(req.userProfile);
 };
 
+exports.getUserProfile=(req,res)=>{
+  UserProfile.find({user:req.params.userId})
+  .exec((err,profile)=>{
+    if(err||!profile){
+      return res.status(400).json({error: 'User profile not found'});
+    }
+    res.status(200).json(profile[0]);
+  })
+}
+
 exports.postProfile=(req,res)=>{
   const user=req.profile;
   const data={

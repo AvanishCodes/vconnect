@@ -44,7 +44,7 @@ const userProfile = new mongoose.Schema({
   // Address Line 1
   al1: {
     type: String,
-    required: true,
+    required: false,
     maxlength: 200
   },
   // Address Line 2
