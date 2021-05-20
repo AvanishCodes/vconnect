@@ -74,7 +74,7 @@ exports.getFilteredTrials=(req,res)=>{
       city:profile[0].city,
       keyword:profile[0].keyword
     }
-    console.log(query)
+    //console.log(query)
     Trial.find(query,(err,trial)=>{
       if(!trial)
       res.status(400).json({error:"Trial not found"})

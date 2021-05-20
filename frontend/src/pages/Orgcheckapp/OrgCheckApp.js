@@ -62,7 +62,7 @@ function OrgCheckApp({ match }) {
     const trialId = match.params.trialId;
     getAllApplication(orgToken, trialId, orgId)
       .then((data) => {
-        //console.log(data)
+        console.log(data)
         setApplication(data)
       })
   }, [])

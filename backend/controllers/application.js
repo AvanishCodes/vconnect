@@ -36,25 +36,15 @@ exports.postApplication=(req,res)=>{
 };
 
 exports.getAllApplications=(req,res)=>{
-  Application.find().exec((err,app)=>{
+if(req.trial.org==req.params.orgId){
+  //console.log(req.params.trialId)
+  Application.find({trial:req.params.trialId})
+  .exec((err,data)=>{
+    //console.log(data);
     if(err){
-      console.log(err)
+      return res.status(400).json({error:"No application"});
     }
-    else{
-       if(app[0].trial==req.params.trialId)
-       {
-         UserProfile.find({user:app[0].applicant}).exec((err,data)=>{
-
-           if(err)
-           console.log(err)
-           else{
-            res.json(data)
-           }
-         })
-       }
-
-
-
-    }
-  });
-};
+    res.status(200).json(data);
+  })
+}
+}
